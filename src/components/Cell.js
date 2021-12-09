@@ -20,7 +20,7 @@ const CellTitle = styled.div`
 
 const Cell = (props) => (
   <CellGroup>
-    <CellImage src={require("../Images/" + props.image).default} />
+    <CellImage src={require("../Images/Header/" + props.image).default} />
     <CellTitle>{props.title}</CellTitle>
   </CellGroup>
 );
