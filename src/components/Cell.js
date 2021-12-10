@@ -13,7 +13,7 @@ const CellImage = styled.img`
 `;
 
 const CellTitle = styled.div`
-  color: #ffffff;
+  color: ${props => props.textColor ? "black" : "white"};
   font-size: 15px;
   padding: 20px 0;
 `;
@@ -21,7 +21,7 @@ const CellTitle = styled.div`
 const Cell = (props) => (
   <CellGroup>
     <CellImage src={require("../Images/Header/" + props.image).default} />
-    <CellTitle>{props.title}</CellTitle>
+    <CellTitle>{props.title} {props.textColor}</CellTitle>
   </CellGroup>
 );
 
